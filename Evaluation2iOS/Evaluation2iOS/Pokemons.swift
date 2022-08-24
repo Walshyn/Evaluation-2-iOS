@@ -39,14 +39,17 @@ enum elements : String{
 
 class pokeSingleton{
     static let shared = pokeSingleton()
-    var pokemons = [Pokemons(names: "Bulbizarre", types: [.grass, .poison], gens: "1", pokedexN: "001", hei: "0.7", splash: "Bulbizarre"),
+    var pokemons = [
     Pokemons(names: "Herbizarre", types: [.grass, .poison], gens: "1", pokedexN: "002", hei: "1", splash: "Herbizarre"),
     Pokemons(names: "Florizarre", types: [.grass, .poison], gens: "1", pokedexN: "003", hei: "2", splash: "Florizarre"),
-    
-    
+    Pokemons(names: "Bulbizarre", types: [.grass, .poison], gens: "1", pokedexN: "001", hei: "0.7", splash: "Bulbizarre"),
+    Pokemons(names: "Dracaufeu", types: [.grass, .flying], gens: "1", pokedexN: "006", hei: "1.7", splash:  "Dracaufeu"),
     Pokemons(names: "Salamèche", types: [.grass], gens: "1", pokedexN: "004", hei: "0.6", splash: "Salameche"),
     Pokemons(names: "Reptincell", types: [.grass], gens: "1", pokedexN: "005", hei: "1.1", splash: "Reptincel"),
-    Pokemons(names: "Dracaufeu", types: [.grass, .flying], gens: "1", pokedexN: "006", hei: "1.7", splash:  "Dracaufeu"),
+ 
     
-    Pokemons(names: "Carapuce", types: [.water], gens: "1", pokedexN: "007", hei: "0.5", splash:  "Carapuce")]
+    Pokemons(names: "Carapuce", types: [.water], gens: "1", pokedexN: "007", hei: "0.5", splash:  "Carapuce")].sorted {
+        $0.pokedexNum < $1.pokedexNum
+    }
+    
 }

@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         pokePic.image = UIImage(named: pokemon.pic)
         pokedexNum.text = "# \(pokemon.pokedexNum)"
         name.text = pokemon.name

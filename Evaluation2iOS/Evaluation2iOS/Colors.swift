@@ -15,5 +15,6 @@ class Colors{
         .darkGray,
         .red,
         .black,
-        .green]
+        .green,
+        .orange]
 }
