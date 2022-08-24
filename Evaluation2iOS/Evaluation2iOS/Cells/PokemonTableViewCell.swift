@@ -24,4 +24,9 @@ class PokemonTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setupCell(pokemon: Pokemons){
+        pokePIc.image = pokemon.pic
+        pokeLbl.text = pokemon.name
+    }
+    
 }
