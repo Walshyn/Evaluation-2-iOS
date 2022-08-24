@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: Login screen by choice
 class LogInChoiceViewController: UIViewController {
     @IBOutlet weak var mailLbl: UITextField!
     @IBOutlet weak var pswLbl: UITextField!

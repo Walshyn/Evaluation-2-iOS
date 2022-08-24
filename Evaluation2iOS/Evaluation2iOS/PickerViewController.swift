@@ -10,13 +10,6 @@ import SafariServices
 class PickerViewController: UIViewController {
     @IBOutlet weak var pickerPoke: UIPickerView!
     @IBOutlet weak var picPoke: UIImageView!
-    @IBAction func moreInfo() {
-        if let url = URL(string: NSLocalizedString("PokeUrl", comment: "")){
-            let vc = SFSafariViewController(url: url)
-            present(vc, animated: true)
-        }
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,20 +20,9 @@ class PickerViewController: UIViewController {
         
         self.title = "Picker"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
-
+//MARK: Picker Config
 extension PickerViewController: UIPickerViewDataSource, UIPickerViewDelegate{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2

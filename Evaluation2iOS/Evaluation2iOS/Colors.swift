@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//MARK: Color creation
 class Colors{
     static let shared = Colors()
     let colors: [UIColor] = [

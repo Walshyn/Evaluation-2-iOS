@@ -21,7 +21,7 @@ class PokemonViewController: UIViewController {
             }
 
 }
-
+//MARK: Pokemon view config
 extension PokemonViewController:  UITableViewDataSource{
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

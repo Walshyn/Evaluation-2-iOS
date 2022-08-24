@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import SafariServices
+//MARK: Details view config
 class DetailViewController: UIViewController {
     @IBOutlet weak var pokePic: UIImageView!
     @IBOutlet weak var pokedexNum: UILabel!
@@ -14,6 +15,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var type: UILabel!
     @IBOutlet weak var height: UILabel!
     @IBOutlet weak var gen: UILabel!
+    @IBAction func moreInfo() {
+        if let url = URL(string: NSLocalizedString("PokeUrl", comment: "")){
+            let vc = SFSafariViewController(url: url)
+            present(vc, animated: true)
+        }
+    }
     var pokemon: Pokemons!
     
     override func viewDidLoad() {

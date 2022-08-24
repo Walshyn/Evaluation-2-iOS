@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//MARK: Class creation
 class Pokemons {
 
     var name: String
@@ -26,7 +26,7 @@ class Pokemons {
     }
 
 }
-
+//MARK: Types
 
 enum elements : String{
     case water = "Water"
@@ -36,7 +36,7 @@ enum elements : String{
     case dragon = "Dragon"
     case poison = "Poison"
 }
-
+// MARK: List Adding
 class pokeSingleton{
     static let shared = pokeSingleton()
     var pokemons = [

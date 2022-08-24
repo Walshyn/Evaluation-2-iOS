@@ -8,7 +8,7 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
+//MARK: LogIn screen creation
     
     @IBOutlet weak var connexionLbl: UILabel!
     @IBOutlet weak var pokeHeader: UIImageView!
