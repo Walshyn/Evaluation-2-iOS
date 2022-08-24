@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		005A024A28B6126300C366AF /* PokemonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005A024928B6126300C366AF /* PokemonTableViewCell.xib */; };
-		005A024C28B6184A00C366AF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A024B28B6184A00C366AF /* DetailView.swift */; };
+		005A024E28B62CB600C366AF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A024D28B62CB600C366AF /* DetailViewController.swift */; };
+		005A025028B6507000C366AF /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A024F28B6507000C366AF /* Colors.swift */; };
+		005A025328B65DB500C366AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 005A025528B65DB500C366AF /* Localizable.strings */; };
 		0084427E28B4EC320097DF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0084427D28B4EC320097DF4A /* AppDelegate.swift */; };
 		0084428028B4EC320097DF4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0084427F28B4EC320097DF4A /* SceneDelegate.swift */; };
 		0084428228B4EC320097DF4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0084428128B4EC320097DF4A /* ViewController.swift */; };
@@ -25,7 +27,10 @@
 
 /* Begin PBXFileReference section */
 		005A024928B6126300C366AF /* PokemonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTableViewCell.xib; sourceTree = "<group>"; };
-		005A024B28B6184A00C366AF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		005A024D28B62CB600C366AF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		005A024F28B6507000C366AF /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		005A025428B65DB500C366AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		005A025628B65DCA00C366AF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0084427A28B4EC320097DF4A /* Evaluation2iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evaluation2iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0084427D28B4EC320097DF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0084427F28B4EC320097DF4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,9 +88,11 @@
 				0084429328B4F7E90097DF4A /* LogInChoiceViewController.swift */,
 				0084429528B518000097DF4A /* PokemonViewController.swift */,
 				0084429728B518D80097DF4A /* PickerViewController.swift */,
-				005A024B28B6184A00C366AF /* DetailView.swift */,
 				0084429D28B51A910097DF4A /* Cells */,
 				008442A028B51DCD0097DF4A /* Pokemons.swift */,
+				005A024D28B62CB600C366AF /* DetailViewController.swift */,
+				005A024F28B6507000C366AF /* Colors.swift */,
+				005A025528B65DB500C366AF /* Localizable.strings */,
 			);
 			path = Evaluation2iOS;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 0084427128B4EC310097DF4A;
 			productRefGroup = 0084427B28B4EC320097DF4A /* Products */;
@@ -157,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005A025328B65DB500C366AF /* Localizable.strings in Resources */,
 				0084428A28B4EC330097DF4A /* LaunchScreen.storyboard in Resources */,
 				005A024A28B6126300C366AF /* PokemonTableViewCell.xib in Resources */,
 				0084428728B4EC330097DF4A /* Assets.xcassets in Resources */,
@@ -172,13 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0084429228B4F3610097DF4A /* LogInViewController.swift in Sources */,
+				005A025028B6507000C366AF /* Colors.swift in Sources */,
 				0084429B28B51A680097DF4A /* PokemonTableViewCell.swift in Sources */,
 				0084429428B4F7E90097DF4A /* LogInChoiceViewController.swift in Sources */,
-				005A024C28B6184A00C366AF /* DetailView.swift in Sources */,
 				0084429628B518000097DF4A /* PokemonViewController.swift in Sources */,
 				008442A128B51DCD0097DF4A /* Pokemons.swift in Sources */,
 				0084428228B4EC320097DF4A /* ViewController.swift in Sources */,
 				0084427E28B4EC320097DF4A /* AppDelegate.swift in Sources */,
+				005A024E28B62CB600C366AF /* DetailViewController.swift in Sources */,
 				0084429828B518D80097DF4A /* PickerViewController.swift in Sources */,
 				0084428028B4EC320097DF4A /* SceneDelegate.swift in Sources */,
 			);
@@ -187,6 +197,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		005A025528B65DB500C366AF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005A025428B65DB500C366AF /* en */,
+				005A025628B65DCA00C366AF /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		0084428328B4EC320097DF4A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -210,6 +229,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -270,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
